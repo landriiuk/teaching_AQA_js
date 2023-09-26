@@ -1,0 +1,11 @@
+{
+  "name": "teaching_aqa_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "variables_primitives": "node '1.node intro, variables, primitives/js-variables && primitives/lesson3.js'"
+  },
+  "author": "Liubov Andriiuk",
+  "license": "ISC"
+}
