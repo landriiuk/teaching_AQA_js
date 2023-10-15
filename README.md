@@ -4,3 +4,6 @@
 
 `npm run variables_primitives`
 
+## to run js operators and methods
+
+`npm run operators_methods`
