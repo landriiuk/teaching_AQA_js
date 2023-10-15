@@ -64,7 +64,7 @@ let boolFalse = false;
 console.log(typeof boolFalse, typeof boolTrue);
 
 //Undefined
-let undefinedValue;
+export let undefinedValue;
 // let undefinedValue = undefined;
 console.log(typeof undefinedValue);
 

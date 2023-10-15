@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "npm_hello": "node hello.js",
+    "npm_index": "node indexTest.js",
+    "run_npm_basics": "npm run npm_index && npm run npm_hello"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "cypress": "^13.2.0",
+    "eslint": "^8.49.0"
+  }
+}
