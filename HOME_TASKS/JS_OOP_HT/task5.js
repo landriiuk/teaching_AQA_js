@@ -61,24 +61,16 @@ class PeopleRegistry {
   }
 
   removePerson(firstName, lastName) {
-    this.people = this.people.filter(
-      (person) =>
-        person.firstName !== firstName || person.lastName !== lastName,
-    );
+    this.people = this.people.filter((person) => person.firstName !== firstName || person.lastName !== lastName);
   }
 
   findPerson(firstName, lastName) {
-    return this.people.find(
-      (person) =>
-        person.firstName === firstName && person.lastName === lastName,
-    );
+    return this.people.find((person) => person.firstName === firstName && person.lastName === lastName);
   }
 
   listPeople() {
     this.people.forEach((person) => {
-      console.log(
-        `First name : ${person.firstName}, last name : ${person.lastName}, age: ${person.age}`,
-      );
+      console.log(`First name : ${person.firstName}, last name : ${person.lastName}, age: ${person.age}`);
     });
   }
 }
@@ -97,9 +89,7 @@ registry.listPeople();
 const foundPerson = registry.findPerson("Ivan", "User1");
 
 if (foundPerson) {
-  console.log(
-    `Name: ${foundPerson.firstName} ${foundPerson.lastName}, Age: ${foundPerson.age}`,
-  );
+  console.log(`Name: ${foundPerson.firstName} ${foundPerson.lastName}, Age: ${foundPerson.age}`);
 } else {
   console.log("Person is not found");
 }

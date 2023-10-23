@@ -1,40 +1,44 @@
-
-const funcExp = function () { console.log('body') }
+const funcExp = function () {
+  console.log("body");
+};
 
 function name(a, b) {
-    return a, b
+  return a, b;
 }
 
-name(1, 2)
+name(
+  1,
+  2
+)(
+  // IIFE
 
-// IIFE
+  function () {
+    body;
+  }
+)();
 
 (function () {
-body
-})();
-
-(function () {
-console.log("I'm")
+  console.log("I'm");
 })();
 
 // Closures.
 // 1)
 function findFrameName() {
-    let frameName = "Playwright";
-    function displayName() {
-        console.log(frameName); //undefined
-    }
-    displayName();
+  let frameName = "Playwright";
+  function displayName() {
+    console.log(frameName); //undefined
+  }
+  displayName();
 }
 findFrameName();
 
 // 2
 function findFrameName() {
-    let frameName = "Playwright";
-    function displayName() {
-        console.log(frameName); //undefined
-    }
-    return displayName;
+  let frameName = "Playwright";
+  function displayName() {
+    console.log(frameName); //undefined
+  }
+  return displayName;
 }
 let result = findFrameName();
 // result();// === displayName
@@ -42,17 +46,14 @@ let result = findFrameName();
 console.log(result);
 
 function outerFunction() {
-    let outerVariable = 10;
-  
-    function innerFunction() {
-      console.log(outerVariable);
-    }
-    return innerFunction;
+  let outerVariable = 10;
+
+  function innerFunction() {
+    console.log(outerVariable);
   }
-  // Створення замикання
+  return innerFunction;
+}
+// Створення замикання
 let closure = outerFunction();
-  // Виклик замикання
+// Виклик замикання
 closure(); // Результат виведення буде "10"
-
-
-

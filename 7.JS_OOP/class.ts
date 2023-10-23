@@ -1,34 +1,32 @@
 interface IUser {
-    walk: () => void,
-    sleep: () => void
+  walk: () => void;
+  sleep: () => void;
 }
 
 class User1 implements IUser {
-    constructor() {
-    }
+  constructor() {}
 
-    walk: () => {};
-    sleep: () => {};
+  walk: () => {};
+  sleep: () => {};
 }
 class Person implements IUser {
-    constructor() {
-
-    }
-    walk(): void { console.log("smth"); };
-    sleep(): void { };
+  constructor() {}
+  walk(): void {
+    console.log("smth");
+  }
+  sleep(): void {}
 }
 
 class Employee {
-    constructor() {
-    }
+  constructor() {}
 
-    abilitySleep(sleepEl: Array<IUser>) {
-        sleepEl.forEach((sleepE) => {
-            sleepE.sleep();
-        });
-    }
-    // .forEach((sleepEl: Array<IUser>)  {
-    // sleepEl.sleep();
+  abilitySleep(sleepEl: Array<IUser>) {
+    sleepEl.forEach((sleepE) => {
+      sleepE.sleep();
+    });
+  }
+  // .forEach((sleepEl: Array<IUser>)  {
+  // sleepEl.sleep();
 }
 
 const employee = new Employee();

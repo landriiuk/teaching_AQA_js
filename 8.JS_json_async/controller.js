@@ -28,8 +28,8 @@ export class UserController {
       method: "POST",
       body: JSON.stringify(body),
       headers: {
-        "Content-type": "application/json; charset=UTF-8",
-      },
+        "Content-type": "application/json; charset=UTF-8"
+      }
     });
     return request.json();
   }

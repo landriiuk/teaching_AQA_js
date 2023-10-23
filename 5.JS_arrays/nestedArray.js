@@ -1,6 +1,6 @@
-const arrayList = [["John", "Oles",], [123, 11.5], 'true', 'true', 11];
+const arrayList = [["John", "Oles"], [123, 11.5], "true", "true", 11];
 
-//                 0                 ,    1     ,  2       3    4 
+//                 0                 ,    1     ,  2       3    4
 
 //  0         1      //0    1
 
@@ -9,16 +9,15 @@ const arrayList = [["John", "Oles",], [123, 11.5], 'true', 'true', 11];
 //     ["red", "green", "blue"]
 //   ];
 
-
 // // console.log(arrayList[1][0], arrayList[0][1]);
 
 for (let index = 0; index < arrayList.length; index++) {
-    // const element = arrayList[index];
-    // console.log(element);
+  // const element = arrayList[index];
+  // console.log(element);
 
-    for (let j = 0; j < arrayList.length; j++) {
-        console.log(arrayList[index][j]);
-    }
+  for (let j = 0; j < arrayList.length; j++) {
+    console.log(arrayList[index][j]);
+  }
 }
 
 // console.log("________________________");

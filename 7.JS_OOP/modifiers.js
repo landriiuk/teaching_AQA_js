@@ -1,32 +1,31 @@
 // static, # - private, _bookName - protected(private)
 
-
 class BooksClass {
-    // #bookName;
-    constructor(bookName, isAvailable) {
-        this.bookName = bookName;
-        this._isAvailable = isAvailable;
-        // this.testBook = []
-    }
+  // #bookName;
+  constructor(bookName, isAvailable) {
+    this.bookName = bookName;
+    this._isAvailable = isAvailable;
+    // this.testBook = []
+  }
 
-    static bookLength = 100;
+  static bookLength = 100;
 
-    static printBook() {
-        console.log(`My book is: ${this.bookName}`);
-    }
+  static printBook() {
+    console.log(`My book is: ${this.bookName}`);
+  }
 
-    // checkBookIfAvailable() {
-    //     if (this._isAvailable === true) {
-    //         console.log(`${this.#bookName} book is available, pls take it`);
-    //     } else {
-    //         console.log(`${this.#bookName}  book is not available`);
-    //     }
-    // }
+  // checkBookIfAvailable() {
+  //     if (this._isAvailable === true) {
+  //         console.log(`${this.#bookName} book is available, pls take it`);
+  //     } else {
+  //         console.log(`${this.#bookName}  book is not available`);
+  //     }
+  // }
 }
 
 const booksClass = new BooksClass("Avatar", true);
 // console.log(booksClass.)
-console.log(booksClass._isAvailable)
+console.log(booksClass._isAvailable);
 BooksClass.printBook();
 // booksClass.checkBookIfAvailable()
 

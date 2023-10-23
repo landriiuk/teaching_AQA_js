@@ -7,11 +7,11 @@ const var6 = "Vasyl";
 const var7 = "Vasyl";
 const arrayConstr = new Array("John", "Oles", null, true, 11); //outdated.
 console.log(typeof arrayConstr);
-        //    index   0      1      2     3     4
+//    index   0      1      2     3     4
 const arrayList = ["John", "Oles", null, true, 11]; // good
 console.log(typeof arrayList);
 console.log(arrayList[3]);
-console.log(arrayList[3] = false);
+console.log((arrayList[3] = false));
 console.log(arrayList);
 
 console.log(arrayList[arrayList.length - 1]);
@@ -19,19 +19,21 @@ console.log(arrayList[arrayList.length - 1]);
 let emptyArray = [];
 console.log(emptyArray.length);
 emptyArray[0] = new Date().getDate();
-emptyArray[1] = "11"
-emptyArray[3] = function name(a, b) { return a + b }
+emptyArray[1] = "11";
+emptyArray[3] = function name(a, b) {
+  return a + b;
+};
 
 console.log(emptyArray.length);
 
 // For
-const cars1 = ["BMW", "AUDI", "Opel","Volvo"];
+const cars1 = ["BMW", "AUDI", "Opel", "Volvo"];
 
 function iterateCars(array) {
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index]; 
-        console.log(element);
-    }
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    console.log(element);
+  }
 }
 
 iterateCars(cars1);
@@ -44,10 +46,12 @@ const cars2 = ["BMW", "AUDI", "Opel", "Volvo"];
 // }
 
 for (const car in cars2) {
-    console.log(cars2[car]);
+  console.log(cars2[car]);
 }
 
 const cars = ["BMW", "AUDI", "Opel", "Volvo"];
 
-cars.forEach(function (car) { console.log(car) });
-cars.forEach((car)=>console.log(car));
+cars.forEach(function (car) {
+  console.log(car);
+});
+cars.forEach((car) => console.log(car));

@@ -39,13 +39,12 @@
 // console.log(cars);
 // ?.  ??
 
-// ?. 
+// ?.
 // let emptyObj = {};
 // emptyObj.address = "Lviv, str Str";
 // console.log(emptyObj.city?.["myFunc"]); // undefined
 
 // console.log(emptyObj.city?.()); // if method
-
 
 // ??
 
@@ -142,15 +141,15 @@
 // }
 
 const car = {
-    made: "Audi",
-    model: {
-        q5: "Q5",
-        rs: "rs",
-        'Audi A7': "a7",
-    },
-}
+  made: "Audi",
+  model: {
+    q5: "Q5",
+    rs: "rs",
+    "Audi A7": "a7"
+  }
+};
 
-// keys, values, entries. 
+// keys, values, entries.
 // console.log(Object.keys(customer)) // масив ключів
 // console.log("_____________________________________________");
 // console.log(Object.values(customer)) // масив значень
@@ -160,7 +159,6 @@ const car = {
 // for (const iterator of Object.entries(customer)) {
 // console.log(iterator);
 // }
-
 
 // assign
 // const newObj = Object.assign(customer, car);
@@ -184,7 +182,7 @@ const car = {
 // createObj.address = "Lviv str Str";
 // console.log(customer);
 
-// console.log(createObj.address); // 
+// console.log(createObj.address); //
 
 // console.log(customer.hasOwnProperty("email")); //true or false.
 
@@ -200,12 +198,12 @@ const car = {
 // console.log(lastName);
 // console.log(website);
 const profile = {
-    firstName: "Liubov",
-    lastName: "Andriiuk",
-    website: {
-        site1: "someweb.com",
-    }
-}
+  firstName: "Liubov",
+  lastName: "Andriiuk",
+  website: {
+    site1: "someweb.com"
+  }
+};
 // const { firstName, lastName, website: { site1 } } = profile;
 // const { firstName: name1, lastName: name2, website: site } = profile;
 // console.log(name1);
@@ -218,10 +216,9 @@ const profile = {
 // console.log(firstName);
 // console.log(lastName);
 
-
-function name({firstName, ...lastName}) {
-    console.log(firstName, "UserName");
-    console.log(lastName, "Last Name");
+function name({ firstName, ...lastName }) {
+  console.log(firstName, "UserName");
+  console.log(lastName, "Last Name");
 }
 
 name(profile);

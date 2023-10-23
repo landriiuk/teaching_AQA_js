@@ -1,13 +1,12 @@
 class BooksClass {
+  constructor(bookName) {
+    this.bookName = bookName;
+    this.testBook = [];
+  }
 
-    constructor(bookName) {
-        this.bookName = bookName;
-        this.testBook = []
-    }
-
-    checkBook() {
-        console.log(`My book is: ${this.bookName}`);
-    }
+  checkBook() {
+    console.log(`My book is: ${this.bookName}`);
+  }
 }
 
 const booksClass = new BooksClass("Harry Potter");
@@ -18,7 +17,6 @@ console.log(booksClass.bookName);
 
 booksClass2.checkBook();
 console.log(booksClass2.bookName);
-
 
 // example of HW
 // class Class1 {
@@ -39,5 +37,3 @@ console.log(booksClass2.bookName);
 // const person1 = new Class2("Harry Potter 1");
 
 // class1.method(person1);
-
-

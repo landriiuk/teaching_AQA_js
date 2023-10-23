@@ -1,15 +1,15 @@
 class Circle {
-    constructor(radius) {
-        this._radius = radius;
-    }
+  constructor(radius) {
+    this._radius = radius;
+  }
 
-    get diameter() {
-        return this._radius;
-    }
+  get diameter() {
+    return this._radius;
+  }
 
-    set diameter(newRadius) {
-        return this._radius = newRadius;
-    }
+  set diameter(newRadius) {
+    return (this._radius = newRadius);
+  }
 }
 
 const circleClass = new Circle(20);

@@ -11,7 +11,7 @@
 // }
 
 // if (studentsPresent === generalStudentsNumber) {
-//     console.log("all students present"); 
+//     console.log("all students present");
 // } else if (studentsPresent <= 15) {
 //     console.log("5 students absent");
 // } else if (studentsPresent >= generalStudentsNumber) {
@@ -27,7 +27,7 @@
 //     if (age === ageAdult) {
 //         console.log("check documents");// false
 //     } else {
-//         console.log("person older then 18"); 
+//         console.log("person older then 18");
 //     }
 //     console.log("Sell alco");
 // } else {
@@ -46,10 +46,8 @@
 //         ? console.log("all students present")
 //         : console.log("someone is absent")
 
-
-
 // if (studentsPresent === generalStudentsNumber) {
-//     console.log("all students present"); 
+//     console.log("all students present");
 // } else if (studentsPresent <= 15) {
 //     console.log("5 students absent");
 // } else if (studentsPresent >= generalStudentsNumber) {
@@ -67,7 +65,6 @@
 //                 ? console.log("one new student")
 //                 : console.log("can not calculate")
 
-
 // const age = 17;
 // const adultAge = age >= 18 ? "Beer" : "Juice";
 // console.log(adultAge); // Beer
@@ -76,16 +73,16 @@
 // const adultAge =
 //     age > 18
 //         ? "Beer"
-//         : age === 18 
+//         : age === 18
 //             ? "check documents"
 //             : age < 18
 //                 ? "Juice"
 //                 : "age not found"
 
-// console.log(adultAge); 
+// console.log(adultAge);
 
 // if (studentsPresent === generalStudentsNumber) {
-//     console.log("all students present"); 
+//     console.log("all students present");
 // } else if (studentsPresent <= 15) {
 //     console.log("5 students absent");
 // } else if (studentsPresent >= generalStudentsNumber) {
@@ -96,7 +93,6 @@
 
 // let studentsPresent = 26;
 // let generalStudentsNumber = 20;
-
 
 // switch (studentsPresent) { // condition === case
 //     case generalStudentsNumber:
@@ -116,19 +112,19 @@ let fruit = "berry";
 let whatIHaveInMyFridge;
 
 switch (fruit) {
-    case "apple": // true "apples" === "apples"
-        whatIHaveInMyFridge = "I have apples in my fridge.";
-        break;
-    case "banana":
-        whatIHaveInMyFridge = "I have bananas in my fridge.";
-        break;
-    case "orange":
-        whatIHaveInMyFridge = "I have oranges in my fridge.";
-        break;
-    case "strawberry":
-        whatIHaveInMyFridge = "I have strawberries in my fridge.";
-        break;
-    default:
-        whatIHaveInMyFridge = "I have something else in my fridge.";
+  case "apple": // true "apples" === "apples"
+    whatIHaveInMyFridge = "I have apples in my fridge.";
+    break;
+  case "banana":
+    whatIHaveInMyFridge = "I have bananas in my fridge.";
+    break;
+  case "orange":
+    whatIHaveInMyFridge = "I have oranges in my fridge.";
+    break;
+  case "strawberry":
+    whatIHaveInMyFridge = "I have strawberries in my fridge.";
+    break;
+  default:
+    whatIHaveInMyFridge = "I have something else in my fridge.";
 }
 console.log(whatIHaveInMyFridge);

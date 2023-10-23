@@ -5,8 +5,14 @@
   "main": "index.js",
   "scripts": {
     "variables_primitives": "node '1.node intro, variables, primitives/js-variables && primitives/lesson3.js'",
-    "operators_methods":"node '2.JS Operators/string.js' && node '2.JS Operators/number.js' && node '2.JS Operators/string.js'"
+    "operators_methods": "node '2.JS Operators/string.js' && node '2.JS Operators/number.js' && node '2.JS Operators/string.js'",
+ "prettier": "",
+ "eslint" : ""
   },
   "author": "Liubov Andriiuk",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "prettier": "3.0.3"
+  }
 }

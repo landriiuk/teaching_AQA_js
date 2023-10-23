@@ -19,15 +19,15 @@ console.log(person); // undefined
 var person = "test";
 
 // console.log(person1); // ReferenceError: Cannot access 'person1' before initialization
-// let person1 = "test2"; 
+// let person1 = "test2";
 
 if (true) {
-    var bool = "false";
+  var bool = "false";
 }
 console.log(bool);
 
 if (true) {
-    let isBool = "false";
+  let isBool = "false";
 }
 //console.log("let bool" , isBool); // let isBool is out of scope, ReferenceError: isBool is not defined
 
@@ -39,8 +39,8 @@ let loginButton2;
 
 //______________Primitives
 
-//String 
-let stringTest = "string value"
+//String
+let stringTest = "string value";
 console.log(typeof stringTest);
 
 //Number
@@ -52,7 +52,7 @@ console.log(typeof numberValue);
 
 // BigInt
 let bigIntValueTest = 10000000000000000000000000000000000000000000000000000;
-console.log(typeof bigIntValueTest);// number
+console.log(typeof bigIntValueTest); // number
 
 let bigIntValue = 100000000000000n;
 console.log(typeof bigIntValue); //bigInt
@@ -72,6 +72,4 @@ console.log(typeof undefinedValue);
 const nullDeclarationValue = null;
 console.log(typeof nullDeclarationValue);
 
-console.log(`Javascript is: ${bigIntValue} ${bigIntValue}`)
-
-
+console.log(`Javascript is: ${bigIntValue} ${bigIntValue}`);

@@ -1,5 +1,5 @@
 // if (this == global) {
-//     console.log("I'm global"); // check this 
+//     console.log("I'm global"); // check this
 // }
 
 // function greet(message) {
@@ -23,6 +23,5 @@
 //       anotherFunc();
 //     }
 //   };
-  
+
 // obj.sing();
-  

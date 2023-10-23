@@ -14,7 +14,6 @@ console.log(studentsList);
 console.log(studentsList.shift());
 console.log(studentsList);
 
-
 const studentsList2 = ["John", "Vasyl", "Ben"];
 
 console.log(studentsList2.join());
@@ -61,13 +60,10 @@ console.log(resultFind);
 const reduceResult = numbers.reduce((acc, element) => acc + element);
 console.log(reduceResult);
 
-
 const numbers = [1, 2, 3, 4, 5];
 const doubledNumbers = numbers.map((number) => number * 2);
 console.log(doubledNumbers);
 
 const sports = ["soccer", "baseball", "football", "tennis"];
-const sortedArray = sports.sort((a, b) => a.localeCompare(b))
+const sortedArray = sports.sort((a, b) => a.localeCompare(b));
 console.log(sortedArray);
-
-

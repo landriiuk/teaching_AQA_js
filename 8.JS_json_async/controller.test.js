@@ -4,9 +4,7 @@ import { UserController } from "./controller.js";
 
 test("Check if user id is 1", async () => {
   const id = 1;
-  const userController = new UserController(
-    "https://jsonplaceholder.typicode.com",
-  );
+  const userController = new UserController("https://jsonplaceholder.typicode.com");
   const user = await userController.getUserById(1);
 
   console.log(user.id);
@@ -17,11 +15,9 @@ test("Send post", async () => {
   const body = {
     title: "foo",
     body: "bar",
-    userId: 1,
+    userId: 1
   };
-  const userController = new UserController(
-    "https://jsonplaceholder.typicode.com",
-  );
+  const userController = new UserController("https://jsonplaceholder.typicode.com");
   const post = await userController.createResource(body);
   assert.strictEqual(post.title, body.title, "Check if equal");
 });
